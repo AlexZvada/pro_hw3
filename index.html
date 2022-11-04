@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var age = prompt("Введите возраст");
+        if ( +age || age=="0") {
+            if (age == 1 || (age % 10 == 1) && age != 11 && age % 100 != 11) {
+                alert("Вам " + age + " год")
+            }
+            else if (((2 <= age && age <= 4) || (2 <= age % 10 && age % 10 <= 4)) && age != 12 && age != 13 && age != 14 && age % 100 != 12 && age % 100 != 13 && age % 100 != 14) {
+                alert("Вам " + age + " года")
+            }
+            else{
+                alert("Вам " + age + " лет")
+            }
+        }
+        else {
+            alert("Введите положительное число без пробелов и запятых")
+        }
+    </script>
+</body>
+
+</html>
